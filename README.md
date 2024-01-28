@@ -2,7 +2,7 @@
 PyTorch implementation for Robust Category-Level 3D Pose Estimation from Diffusion-Enhanced Synthetic Data.
 
 <div align="center">
-  <img src="imgs/synthetic_3d.png" width="100%">
+  <img src="imgs/synthetic_3d.jpg" width="100%">
 </div>
 
 **Robust Category-Level 3D Pose Estimation from Diffusion-Enhanced Synthetic Data**
