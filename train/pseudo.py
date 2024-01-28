@@ -259,6 +259,7 @@ def val_one_step(net, memory_bank, val_dataloader, criterion, args, itr):
 
 def pseudo(args):
     cate = args.category
+    args.exp_name = f'P3D-Diffusion_{cate}'
     args.prev_ckpt = f'../experiments/P3D-Diffusion_{cate}/ckpts/saved_model_2000.pth'
     if cate in ['bus', 'car', 'motorbike', 'aeroplane', 'bicycle', 'boat', 'diningtable', 'train']:
         args.distance = 6
@@ -407,7 +408,7 @@ def pseudo(args):
 
 def fine_tune(args):
     cate = args.category
-    args.exp_name = f'{cate}'
+    args.exp_name = f'P3D-Diffusion_{cate}'
 
     args.prev_ckpt = f'../experiments/P3D-Diffusion_{cate}/ckpts/saved_model_2000.pth'
     if cate in ['bus', 'car', 'motorbike', 'aeroplane', 'bicycle', 'boat', 'diningtable', 'train']:
