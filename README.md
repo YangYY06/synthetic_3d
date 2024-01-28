@@ -2,7 +2,7 @@
 PyTorch implementation for Robust Category-Level 3D Pose Estimation from Diffusion-Enhanced Synthetic Data.
 
 <div align="center">
-  <img src="imgs/synthetic_3d.png" width="100%">
+  <img src="imgs/synthetic_3d.jpg" width="100%">
 </div>
 
 **Robust Category-Level 3D Pose Estimation from Diffusion-Enhanced Synthetic Data**
@@ -12,9 +12,6 @@ Jiahao Yang, Wufei Ma, Angtian Wang, Xiaoding Yuan, Alan Yuille, Adam Kortylewsk
 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024
 
 [[Paper]](https://openaccess.thecvf.com/content/WACV2024/html/Yang_Robust_Category-Level_3D_Pose_Estimation_From_Diffusion-Enhanced_Synthetic_Data_WACV_2024_paper.html)
-
-
-## P3D-Diffusion Generation
 
 ### Install
 
@@ -66,14 +63,14 @@ cd ControlNet
 . run_canny.sh
 ```
 
-## Train Neural Mesh Model with Synthetic Images
+### Train Neural Mesh Model with Synthetic Images
 
 ```
 cd train
 . train.sh
 ```
 
-## Unsupervised Domain Adaptation (UDA)
+### Unsupervised Domain Adaptation (UDA)
 
 First inference on PASCAL3D+ training split to generate pseudo labels.
 
@@ -89,7 +86,7 @@ cd train
 . pseudo.sh
 ```
 
-## Fine-tune with Real Annotations (optional)
+### Fine-tune with Real Annotations (optional)
 
 Fine-tune the model with a portion of real annotations.
 
@@ -98,14 +95,14 @@ cd train
 . fine_tune.sh
 ```
 
-## Test on PASCAL3D+ Dataset
+### Test on PASCAL3D+ Dataset
 
 ```
 cd test_pascal3d
 . test.sh
 ```
 
-## Citation
+### Citation
 
 Please cite the following paper if you find our work useful for your research.
 
